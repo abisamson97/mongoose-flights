@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+
+<h2>Flight List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Airport</th>
+      <th>Airline</th>
+      <th>Flight Number</th>
+      <th>Departs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Write the line of EJS to iterate over movies using forEach -->
+    <% flights.forEach(function(f) { %>
+      <tr>
+        <td><%= f.airport %></td>
+        <td><%= f.airline %></td>
+        <td><%= f.flightNo %></td>
+        <td><%= f.departs %></td>
+      </tr>
+    <!-- Close the forEach using EJS here -->
+    <% }); %>
+  </tbody>
+</table>
+
+<%- include('../partials/header') %>
