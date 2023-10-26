@@ -5,4 +5,30 @@ body {
 
 a {
   color: #00B7FF;
+  font-size: 18px;
+}
+
+table {
+  font-size: 20px;
+}
+
+table thead th {
+  padding: 5px;
+  border-bottom: 2px solid #424748;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+#show-page {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2rem;
+  padding-top: 20px;
+}
+
+#show-page div:nth-child(even) {
+  font-weight: bold;
 }
